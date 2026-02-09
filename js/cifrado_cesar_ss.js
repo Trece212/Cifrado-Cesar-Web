@@ -17,11 +17,12 @@ const listaCaracteres = [
 // Calcula la posición positiva y negativa del
 // caracter que se esta buscando en el arreglo
 // y retorna su posición
-function calcularposicion (listaCal, caracterCal, cambioCal, direccionCal) {
+function calcularPosicion (listaCal, caracterCal, cambioCal, direccionCal) {
     const cantidadCaracetresCal = listaCal.length - 1;
 
     if (direccionCal == true) {
         let posicion = listaCal.indexOf(caracterCal) + cambioCal;
+
         if (posicion > cantidadCaracetresCal) {
             let convercion = posicion - cantidadCaracetresCal;
             posicion = convercion - 1;
@@ -34,6 +35,7 @@ function calcularposicion (listaCal, caracterCal, cambioCal, direccionCal) {
 
     if (direccionCal == false) {
         let posicion = listaCal.indexOf(caracterCal) - cambioCal;
+        
         if (posicion < 0) {
             let convercion = Math.abs(posicion);
             posicion = (cantidadCaracetresCal - convercion) + 1;
@@ -43,4 +45,50 @@ function calcularposicion (listaCal, caracterCal, cambioCal, direccionCal) {
             return posicion;
         }
     }
+}
+
+// Calcula el temaño del string y cifra la
+// cadena de texto retornado el resultado
+// tambien funciona a la inversa.
+function cifrarDecifrar (listaCC, caracteresCC, cambioCC, cifrar) {
+    const totalCaracteres = caracteresCC.length;
+    let parImpar = totalCaracteres % 2 == 0;
+    let numero = 0;
+    let salida = '';
+
+    if (parImpar == false) {
+        numero = 1;
+    }
+
+    if (cifrar == true) {
+        for (let i = 0; i < totalCaracteres; i++) {
+            let caracter = caracteresCC[i];
+            
+            if (numero == 0) {
+                salida = salida + listaCC[calcularPosicion(listaCaracteres, caracter, cambioCC, true)];
+                numero++;
+            }
+            else {
+                salida = salida + listaCC[calcularPosicion(listaCaracteres, caracter, cambioCC, false)];
+                numero--;
+            }
+        }
+    }
+
+    if (cifrar == false) {
+        for (let i = 0; i < totalCaracteres; i++) {
+            let caracter = caracteresCC[i];
+            
+            if (numero == 0) {
+                salida = salida + listaCC[calcularPosicion(listaCaracteres, caracter, cambioCC, false)];
+                numero++;
+            }
+            else {
+                salida = salida + listaCC[calcularPosicion(listaCaracteres, caracter, cambioCC, true)];
+                numero--;
+            }
+        }
+    }
+
+    return salida;
 }

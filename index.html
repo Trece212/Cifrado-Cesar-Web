@@ -1,14 +1,52 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cifrado Cesar Web</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css" />
     <script src="./js/script_01.js" defer></script>
     <script src="./js/cifrado_cesar_ss.js" defer></script>
-</head>
-<body>
-    <h1>Hola Mundo</h1>
-</body>
+  </head>
+  <body>
+    <div class="contenedor">
+      <main>
+        <h1>Cifrado Cesar SS</h1>
+        <section>
+          <div>
+            <button id="cifrar">Cifrar</button>
+            <button id="decifrar">Decifrar</button>
+          </div>
+          <div>
+            <label for="cambio">Cambio:</label>
+            <input type="number" name="cambio" id="cambio" />
+          </div>
+        </section>
+        <section>
+          <div>
+            <label for="entrada">Entrada</label>
+            <br>
+            <textarea 
+                name="entrada" 
+                id="entrada" 
+                cols="30" 
+                rows="10"
+            >Escribe lo que quieras cifrar o decifrar aquí...
+            </textarea>
+          </div>
+          <div>
+            <label for="salida">Salida</label>
+            <br>
+            <textarea 
+                name="salida" 
+                id="salida" 
+                cols="30" 
+                rows="10"
+            >El resultado se mostrara aquí...
+            </textarea>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
 </html>

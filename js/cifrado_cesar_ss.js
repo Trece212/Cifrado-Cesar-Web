@@ -1,5 +1,5 @@
 // Lista de caracteres
-const listaCaracteres = [
+export const listaCaracteres = [
     ".", ":", ",", ";", "¿", "?", "¡", "!", "'", "@", 
     "#", "$", "%", "^", "(", ")", "-", "-", "=", "+",
     "/", "|", "<", ">", "{", "}", "[", "]", "~", "`",
@@ -17,7 +17,7 @@ const listaCaracteres = [
 // Calcula la posición positiva y negativa del
 // caracter que se esta buscando en el arreglo
 // y retorna su posición
-function calcularPosicion (listaCal, caracterCal, cambioCal, direccionCal) {
+export function calcularPosicion (listaCal, caracterCal, cambioCal, direccionCal) {
     const cantidadCaracetresCal = listaCal.length - 1;
 
     if (direccionCal == true) {
@@ -50,7 +50,7 @@ function calcularPosicion (listaCal, caracterCal, cambioCal, direccionCal) {
 // Calcula el temaño del string y cifra la
 // cadena de texto retornado el resultado
 // tambien funciona a la inversa.
-function cifrarDecifrar (listaCC, caracteresCC, cambioCC, cifrar) {
+export function cifrarDecifrar (listaCC, caracteresCC, cambioCC, cifrar) {
     const totalCaracteres = caracteresCC.length;
     let parImpar = totalCaracteres % 2 == 0;
     let numero = 0;

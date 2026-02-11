@@ -9,44 +9,62 @@
     <script src="./js/cifrado_cesar_ss.js" defer></script>
   </head>
   <body>
+    <!-- Contenedor principal -->
     <div class="contenedor">
-      <main>
+      <!-- Header -->
+      <header>
         <h1>Cifrado Cesar SS</h1>
-        <section>
-          <div>
-            <button id="cifrar">Cifrar</button>
-            <button id="decifrar">Decifrar</button>
-          </div>
-          <div>
-            <label for="cambio">Cambio:</label>
-            <input type="number" name="cambio" id="cambio" />
-          </div>
-        </section>
-        <section>
-          <div>
-            <label for="entrada">Entrada</label>
-            <br>
-            <textarea 
+      </header>
+
+      <!-- Main -->
+      <main>
+
+
+        <article>
+          <!-- Areas de control -->
+          <section class="area1">
+            <div>
+              <button id="cifrar">Cifrar</button>
+              <button id="decifrar">Decifrar</button>
+            </div>
+            <div>
+              <label for="cambio">Cambio:</label>
+              <input type="number" name="cambio" id="cambio" />
+            </div>
+          </section>
+
+          <!-- Entrada y salida de texto -->
+          <section class="area2">
+            <div>
+              <label for="entrada">Entrada</label>
+              <br />
+              <textarea 
                 name="entrada" 
                 id="entrada" 
                 cols="30" 
                 rows="10"
-            >Escribe lo que quieras cifrar o decifrar aquí...
+                autofocus>Escribe lo que quieras cifrar o descifrar aquí...
             </textarea>
-          </div>
-          <div>
-            <label for="salida">Salida</label>
-            <br>
-            <textarea 
+            </div>
+            <div>
+              <label for="salida">Salida</label>
+              <br />
+              <textarea
                 name="salida" 
                 id="salida" 
                 cols="30" 
                 rows="10"
-            >El resultado se mostrara aquí...
+                disabled>El resultado se mostrara aquí...
             </textarea>
-          </div>
-        </section>
+            </div>
+          </section>
+        </article>
       </main>
+
+      <!-- Footer -->
+      <footer>
+        <p>Todos lo derechos reservador 2026.</p>
+      </footer>
     </div>
   </body>
 </html>

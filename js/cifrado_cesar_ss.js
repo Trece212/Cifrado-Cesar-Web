@@ -17,7 +17,7 @@ export const listaCaracteres = [
 // Calcula la posición positiva y negativa del
 // caracter que se esta buscando en el arreglo
 // y retorna su posición
-export function calcularPosicion (listaCal, caracterCal, cambioCal, direccionCal) {
+function calcularPosicion (listaCal, caracterCal, cambioCal, direccionCal) {
     const cantidadCaracetresCal = listaCal.length - 1;
 
     if (direccionCal == true) {

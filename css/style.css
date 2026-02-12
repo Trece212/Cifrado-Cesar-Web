@@ -18,8 +18,14 @@ header h1 {
 /* -- Main -- */
 main {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+}
+
+main p {
+    text-align: justify;
+    max-width: 800px;
+    margin-bottom: 20px;
 }
 
 /* -- Contenido principal -- */
@@ -28,7 +34,8 @@ article {
     background-color: whitesmoke;
     border-radius: 8px;
     padding: 5px;
-    max-width: 500px;
+    margin-top: 20px;
+    max-width: 600px;
 }
 
 article h1 {
@@ -52,6 +59,11 @@ article section {
     margin: 5px;
 }
 
+.area2 {
+    display: flex;
+    flex-direction: row;
+}
+
 .area2 div {
     margin: 10px;
 }
@@ -59,4 +71,22 @@ article section {
 /* -- Footer -- */
 footer p {
     text-align: center;
+}
+
+/* -- Responsive -- */
+@media (max-width: 800px) {
+    .area2  {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main p {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 400px) {
+    main p {
+        max-width: 300px;
+    }
 }

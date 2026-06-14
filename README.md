@@ -28,32 +28,32 @@ Nuestra nueva versión sustituye tanto hacia la derecha como a la izquierda. Ent
 
 Además, el orden de derecha a izquierda cambia si el número total de caracteres es par o impar, entonces se comienza a sustituir de derecha a izquierda, Por ejemplo:
 
-Cadena de caracteres: ABCD
+**Cadena de caracteres:** ABCD
 
-Total de caracteres: 4
+**Total de caracteres:** 4
 
-Desplazamiento: 3 tomando en cuenta la tabla de arriba
+**Desplazamiento:** 3 tomando en cuenta la tabla de arriba
 
-Sustitución: DFFA
+**Sustitución:** DFFA
 
 
 
 Ahora un ejemplo de Izquierda a derecha.
 
-Cadena de caracteres: ABCDE
+**Cadena de caracteres:** ABCDE
 
-Total de caracteres: 5
+**Total de caracteres:** 5
 
-Desplazamiento: 3 tomando en cuenta la tabla de arriba
+**Desplazamiento:** 3 tomando en cuenta la tabla de arriba
 
-Sustitución: EEGGA
+**Sustitución:** EEGGA
 
 
 
 En esta versión todos los caracteres ocupan una posición en el arreglo, ya sea, letras, números y signos de puntuación incluso el espacio “ ” es considerado un carácter.
 
-Por ejemplo: 7 de Mayo del 2023 a las 3:34 pm.
+**Por ejemplo:** 7 de Mayo del 2023 a las 3:34 pm.
 
-Desplazamiento: 7
+**Desplazamiento:** 7
 
-Sustitución: 0Cah{Ó]3mCahiCÝ7Ý.{d{O]V{.4.ýCÑo3
+**Sustitución:** 0Cah[Ó`3mCahiCÝ7Ý;[d[O`V[.4.ýCÑo3

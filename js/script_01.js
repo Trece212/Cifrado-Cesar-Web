@@ -5,11 +5,13 @@ const descifrar = document.querySelector('#descifrar');
 const cambio = document.querySelector('#cambio');
 const entrada = document.querySelector('#entrada');
 const salida = document.querySelector('#salida');
+const limpiar = document.querySelector('#limpiar');
 
-console.log(cifrar, descifrar, cambio, entrada, salida);
+console.log(cifrar, descifrar, cambio, entrada, salida, limpiar);
 
 cifrar.addEventListener('click', cifrarCaracteres);
 descifrar.addEventListener('click', descifrarCaracteres);
+limpiar.addEventListener('click', limpiarAreas);
 
 function cifrarCaracteres () {
     const cadenaCaracteres = extraerCaracteres();
@@ -47,3 +49,9 @@ function extraerCaracteres () {
     return contenido;
 }
 
+function limpiarAreas () {
+    const valorLimpiar = '';
+    entrada.textContent = valorLimpiar;
+    entrada.value = valorLimpiar;
+    salida.textContent = valorLimpiar;
+}

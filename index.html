@@ -3,72 +3,68 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cifrado Cesar Web</title>
+    <title>Cifrado César Neo | Encriptación Moderna</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <script type="module" src="./js/script_01.js" defer></script>
   </head>
   <body>
-    <!-- Contenedor principal -->
     <div class="contenedor">
-
-      <!-- Header -->
       <header>
-        <h1>Cifrado Cesar SS</h1>
+        <h1>Cifrado César Neo</h1>
       </header>
 
-      <!-- Main -->
       <main>
-
         <p>
-          Esta es una versión un poco más compleja del mítico cifrado César o también llamado desplazamiento de César. La versión original solo cambia posiciones hacia adelante, pero esta versión puede hacerlo tanto hacia adelante como hacia atrás; el orden en que se comienza a cifrar varía según el número de caracteres sea par o impar. Esta versión también incluye símbolos y números, no solo letras.
+          ⚡ <strong>La evolución del cifrado clásico</strong> ⚡<br /><br />
+          Tecnología de encriptación de última generación con algoritmo adaptativo. 
+          Sistema de desplazamiento inteligente que alterna direcciones basado en la 
+          longitud del mensaje. Soporta caracteres Unicode, símbolos especiales y 
+          números. Seguridad mejorada para la era digital. 🛡️
         </p>
 
-        <!-- Continido principal -->
         <article>
-          <!-- Areas de control -->
           <section class="area1">
             <div class="botones">
-              <button id="cifrar">Cifrar</button>
-              <button id="descifrar">Decifrar</button>
-              <button id="limpiar">Limpiar</button>
+              <button id="cifrar">🔒 ENCRIPTAR</button>
+              <button id="descifrar">🔓 DESENCRIPTAR</button>
+              <button id="limpiar">🗑️ LIMPIAR</button>
             </div>
             <div>
-              <label for="cambio">Cambio:</label>
-              <input type="number" name="cambio" id="cambio" />
+              <label for="cambio">DESPLAZAMIENTO</label>
+              <input type="number" name="cambio" id="cambio" placeholder="0-100" min="0" max="100" />
             </div>
           </section>
 
-          <!-- Entrada y salida de texto -->
           <section class="area2">
             <div>
-              <label for="entrada">Entrada</label>
-              <br />
+              <label for="entrada">📥 ENTRADA</label>
               <textarea 
                 name="entrada" 
                 id="entrada" 
                 cols="30" 
                 rows="10"
                 autofocus
+                placeholder="Ingresa tu mensaje secreto aquí..."
               >Escribe lo que quieras cifrar o descifrar aquí...</textarea>
             </div>
             <div>
-              <label for="salida">Salida</label>
-              <br />
+              <label for="salida">📤 RESULTADO</label>
               <textarea
                 name="salida" 
                 id="salida" 
                 cols="30" 
                 rows="10"
-                disabled
-                >El resultado se mostrara aquí...</textarea>
+                readonly
+                placeholder="El resultado aparecerá aquí..."
+              >El resultado se mostrará aquí...</textarea>
             </div>
           </section>
         </article>
       </main>
 
-      <!-- Footer -->
       <footer>
-        <p>Todos lo derechos reservador 2026.</p>
+        <p>Todos los derechos reservador 2026 | Diseño Neo-Cyberpunk</p>
       </footer>
     </div>
   </body>
